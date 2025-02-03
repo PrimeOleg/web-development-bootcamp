@@ -13,59 +13,60 @@
         font-family: "Sono", sans-serif;
       }
 
-      li {
-        margin-bottom: 20px;
-      }
-
       .pricing-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-      }
-      
-      .plan-title {
-        font-weight: bold;
-        font-size: 1.5rem;
+        gap: 32px; /* 16px - 1 rem by default */
       }
 
       .pricing-plan {
-        text-align: center;
-        padding: 40px;
-        margin: 20px;
         background-color: #f2f2f2;
-      }
-
-      .plan-button {
-        background-color: #ff6600;
-        color: white;
-        border: 0;
-        border-radius: 10%;
-        padding: 10px;
-      }
-
-      .plan-button:hover {
-        opacity: 0.5;
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+        max-width: 400px;
       }
 
       .plan-features {
-        padding: 0;
-        margin: 0;
         list-style: none;
+        padding: 0;
       }
 
-      .plan-price {
-        font-size: 1.5rem;
+      .plan-features > li {
+        margin-bottom: 20px;
       }
-
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
         .pricing-container {
-        flex-direction: column;
-        height: 100%;
+          flex-direction: column;
+          height: 100vh;
+          margin: 100px;
+          /* too close to the top change it so it is separated form the top of the webpage */
         }
       }
+
+      .plan-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .plan-price {
+        font-weight: bold;
+        font-size: 3rem;
+      }
+
+      .plan-button {
+        border: 0;
+        padding: 10px;
+        background-color: #ff6600;
+        border-radius: 5px;
+        color: white;
+      }
+
 
     </style>
   </head>
@@ -74,7 +75,7 @@
     <div class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
-        <div class="plan-price"><h1>$11.99/month</h1></div>
+        <div class="plan-price">$11.99/month</div>
         <ul class="plan-features">
           <li>✅ 10GB Storage</li>
           <li>✅ 1 User</li>
@@ -84,7 +85,7 @@
       </div>
       <div class="pricing-plan">
         <div class="plan-title">Standard</div>
-        <div class="plan-price"><h1>$19.99/month</h1></div>
+        <div class="plan-price">$19.99/month</div>
         <ul class="plan-features">
           <li>✅ 50GB Storage</li>
           <li>✅ 5 Users</li>
@@ -94,7 +95,7 @@
       </div>
       <div class="pricing-plan">
         <div class="plan-title">Premium</div>
-        <div class="plan-price"><h1>$49.99/month</h1></div>
+        <div class="plan-price">$49.99/month</div>
         <ul class="plan-features">
           <li>✅ 100GB Storage</li>
           <li>✅ 10 Users</li>
