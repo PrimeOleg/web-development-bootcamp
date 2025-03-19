@@ -1,4 +1,4 @@
-# 🎨 Frontend Projects - HTML, CSS, Bootstrap, JavaScript & jQuery  (Dr Ange;a Yu's Course Complete Web Dev Bootcamp)
+# 🎨 Frontend Projects - HTML, CSS, Bootstrap, JavaScript & jQuery  (Dr Angela Yu's Course Complete Web Dev Bootcamp)
 
 ## Overview  
 This repository contains multiple frontend projects built using **HTML, CSS, Bootstrap, JavaScript, and jQuery**. The projects focus on **responsive design, interactive UI components, and dynamic client-side functionality**.
